@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa SMA Negeri 1 Situbondo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #336699;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .link-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .link-section a {
+            text-decoration: none;
+            color: white;
+            background-color: #0288d1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .link-section a:hover {
+            background-color: #01579b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Data Siswa SMA Negeri 1 Situbondo</h1>
+
+    <form action="Siswa.php" method="post">
+        <label for="nama">Nama Siswa:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="jenis kelamin">Jenis kelamin:</label>
+        <select id="jenis kelamin" name="jenis kelamin" required>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="kelas">Kelas:</label>
+        <input type="text" id="kelas" name="kelas" required>
+
+        <input type="submit" value="Kirim Data">
+    </form>
+
+    <!-- Tautan ke halaman lain -->
+    <div class="link-section">
+        <a href="indeks.html">Kembali ke Halaman Utama</a>
+        <a href="layanan.html">Ke Halaman Layanan</a>
+</div>
+</body>
+</html>
